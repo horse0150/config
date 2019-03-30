@@ -1,18 +1,19 @@
-redis:
-  host: 127.0.0.1
-  #password: ft4u0/QRoEVaTPJYa4uSfktjKwwO+CJyS90EJhi2ado=
-  port: 6379
-  database: 10
-  timeout: 15000
-  usePool: true
-  maxTotal: 100
-  maxIdle: 100
-  minIdle: 1
-  maxWaitMillis: 5000
-  minEvictableIdleTimeMillis: 300000
-  numTestsPerEvictionRun: 3
-  timeBetweenEvictionRunsMillis: 60000
-  testOnBorrow: true
-  testOnReturn: false
-  testWhileIdle: false
-  whenExhaustedAction: 2
+spring:
+   redis:
+     host: 127.0.0.1
+     password: 123456
+     port: 6379
+     database: 10
+     timeout: 15000
+     usePool: true
+     maxTotal: 100
+     maxIdle: 100
+     minIdle: 1
+     maxWaitMillis: 5000
+     minEvictableIdleTimeMillis: 300000
+     numTestsPerEvictionRun: 3
+     timeBetweenEvictionRunsMillis: 60000
+     testOnBorrow: true
+     testOnReturn: false
+     testWhileIdle: false
+     whenExhaustedAction: 2
