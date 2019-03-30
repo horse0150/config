@@ -1,16 +1,16 @@
 zuul:
   #忽略框架默认的服务路径
-  ignoredServices: *
+  ignoredServices: "*"
   #是否开启重试功能
-  retryable: true
+  #retryable: true
   routes:
     thelper-user:
        path: /user/**
     thelper-grade:
        path: /grade/**
 
-ribbon:
+#ribbon:
    #当前服务重试次数
-   MaxAutoRetries: 2
+   #MaxAutoRetries: 2
    #切换相同Server的次数
-   MaxAutoRetriesNextServer: 5
+   #MaxAutoRetriesNextServer: 5
